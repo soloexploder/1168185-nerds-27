@@ -10,8 +10,7 @@ body {
 
 
   background-color: #ffffff;
-  background-position: top center;
-  background-repeat: no-repeat;
+
 }
 .inner-page {
   color: #000000;
@@ -21,6 +20,8 @@ body {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  text-align: center;
+  align-items: center;
 }
 a {
   text-decoration: none;
@@ -45,13 +46,13 @@ a {
   color: #000000;
 }
 
-.nav-link a:hover,
-.nav-link a:focus
+.nav-link:hover,
+.nav-link:focus
 {
   color: #fb565a;
 }
-.nav-link a:active{
-  color: #000000;
+.nav-link:active{
+  color: #a6a6a6;
 }
 
 .features h3 {
@@ -97,6 +98,7 @@ a {
 }
 .apps-button:active{
   background-color: #00aa62;
+  color: rgba(255,255,255,0.5);
 }
 .present-button{
   background-color: #efc84a;
@@ -218,11 +220,11 @@ input:invalid {
 
 .catalog-item {
   background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000000 ;
 }
 
 .catalog-item:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border:  1px solid #ffffff;
 }
 .catalog-item a {
   color: #000000;
@@ -256,4 +258,169 @@ input:invalid {
 }
 .pagination-item a:active {
   background-color: #d5d5d5;
+}
+.visually-hidden:not(:focus):not(:active) {
+  /* ... */
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+/* ----- Сеточные стили ----- */
+body {
+  min-width: 1440px;
+  min-height: 2476px;
+}
+.main-header {
+  background-color: #eeeeee;
+  /* Временно для сетки */
+  min-height: 115px;}
+
+  .header-box{
+    display: flex;
+  }
+
+.main-navigation {
+  display: flex;
+
+  /* Временно для сетки */
+  min-height: 115px;
+}
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+
+}
+
+.site-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #eeeeee;
+  /* Временно для сетки */
+  min-height: 115px;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #eeeeee;
+  margin-left: auto;
+  /* Временно для сетки */
+  min-height: 115px;
+}
+
+.container {
+  width:1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 347px;
+}
+.feature-item {
+  width: 300px;
+  /* Временно для сетки */
+  min-height: 347px;
+}
+.main-footer {
+  margin-top: 70px;
+  margin-bottom: 70px ;
+  /* Временно для сетки */
+  background: none;
+  min-height: 78px;
+}
+.sale {
+  margin: 0;
+  width: 560px;
+  /* Временно для сетки */
+  min-height: 70px;
+}
+
+.footer-social {
+  width: 260px;
+  margin-right: 140px;
+
+  /* Временно для сетки */
+  min-height: 70px;
+}
+.main-footer .container {
+  display: flex;
+}
+/* сетка каталогов*/
+.inner-page .main-header {
+  display: flex;
+  background-color: #eeeeee;
+  /* Временно для сетки */
+  min-height: 355px;
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
+}
+
+
+.filter {
+  width: 260px;
+
+  /* Временно для сетки */
+  min-height: 510px;
+}
+.catalog {
+  width: 700px;
+
+  /* Временно для сетки */
+  min-height: 687px;
+}
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.catalog-item {
+ width: 360px;
+ margin-bottom: 20px;
+  margin-right: 20px;
+
+ /* Временно для сетки */
+  min-height:615px;
+}
+.catalog-item:nth-child(2n){
+  margin-right: 0;
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+
+   width: 760px;
+  list-style: none;
+
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 50px;
 }
